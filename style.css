@@ -1,0 +1,365 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-weight: 800;
+  color: #252525;
+}
+/* top-------------- */
+/* --------------------- */
+.top {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 5vh 6.25vw;
+  font-family: Montserrat;
+  margin-bottom: 40px;
+}
+.top .bar-code {
+  width: 6.25vw;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+}
+.top-paragraph {
+  width: 3.75vw;
+  height: auto;
+  position: absolute;
+  left: 2.5vw;
+  top: 30vh;
+}
+.top_box {
+  width: 100%; /* 87.5vw 1120px*/
+  height: 100%; /* 90vh */
+  position: relative;
+  /* padding: 22.222% 7.142% 11.111%; */
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  text-align: center;
+}
+
+.top_box h1 {
+  position: absolute;
+  top: 4vh;
+  left: 0;
+  right: 0;
+}
+.top_box h1 .this {
+  font-size: 2vw;
+  margin-bottom: 2vh;
+}
+.top_box h1 .portfolio {
+  font-size: 10vw; /* 120px */
+}
+
+.top_box h2 {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  right: 0;
+}
+.top_box h2 .of {
+  font-size: 2vw;
+  margin-bottom: 1vh;
+}
+.top_box h2 .hinako,
+.top_box h2 .hasebe {
+  display: inline-block;
+  font-size: 6.5vw;
+}
+.top_box h2 .hinako {
+  margin-right: 1vw;
+}
+/* ---- */
+
+.top_nav {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  text-align: right;
+  list-style: none;
+}
+.top_nav a {
+  text-decoration: none;
+  color: #252525;
+}
+.top_nav li {
+  margin-bottom: 4vh;
+}
+.top_nav li .page {
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+.top_nav li .section-name {
+  font-size: 2.8vw;
+  margin-bottom: 0.5vh;
+}
+/* --- */
+.top_number {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+}
+.top_number .month {
+  width: 100%;
+  padding-bottom: 1.6vh;
+  border-bottom: 4px solid #000;
+  font-size: 4.8vw;
+  margin-bottom: 2vh;
+}
+.top_number .year,
+.top_number .vol {
+  font-size: 1.5vw;
+  margin-bottom: 1vh;
+}
+/* ---- */
+.top_img-box {
+  width: 85.714%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: url(../img/top_01.jpg) top center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -10;
+}
+/* work-------------- */
+/* --------------------- */
+.work {
+  width: 100vw;
+  position: relative;
+  margin-bottom: 80px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.work h1 {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 80px;
+  left: -40px;
+  font-size: 51.2px;
+}
+.work h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 60px;
+  right: 32px;
+  font-size: 30.7px;
+}
+/* ----- */
+.work-list {
+  width: 87.5vw;
+  margin: 0 auto;
+  padding: 40px 7.142vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: top;
+  list-style: none;
+}
+.work-list li {
+  width: 23.75vw;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.work-list .num {
+  text-align: left;
+  font-size: 2.4vw;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.work-img {
+  width: 100%;
+  height: 15vw;
+  object-position: center center;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.work-list .work-body {
+  /* height: 5vw; */
+  width: 100%;
+}
+.work-body .title {
+  font-family: Noto Sans JP;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.work-body .date {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 4px;
+}
+.work-body a {
+  font-size: 10px;
+  font-weight: 300;
+  color: #252525;
+}
+/* about-------------- */
+/* --------------------- */
+.about {
+  width: 100vw;
+  position: relative;
+  margin-bottom: 80px;
+  font-family: Noto Sans JP;
+  font-weight: 700;
+}
+.about h1 {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 120px;
+  left: -80px;
+  font-size: 51.2px;
+  font-family: Montserrat;
+}
+.about h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 32px;
+  right: 28px;
+  font-size: 30.7px;
+  font-family: Montserrat;
+}
+/* ----------- */
+.about-list {
+  width: 87.5vw;
+  margin: 0 auto;
+  padding: 40px 7.142vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.about-list li {
+  height: 74vh;
+  width: 23.75vw;
+  position: relative;
+}
+.about-list img {
+  width: 98%;
+  position: absolute;
+  top: 3.2vw;
+  right: 0;
+  z-index: -10;
+}
+.about_designer img {
+  width: 9.687vw;
+}
+.about-list h3 {
+  font-size: 3.2vw;
+  font-family: Montserrat;
+  color: #fff;
+  text-shadow: 1px 0 0 #252525, 0 1px 0 #252525, -1px 0 0 #252525,
+    0 -1px 0 #252525;
+}
+.about-list h4 {
+  font-size: 2.4vw;
+}
+.about-list .about-body {
+  width: 80%;
+  font-size: 16px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-shadow: 1px 0 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+.about-body_01 {
+  margin-bottom: 40px;
+}
+
+.about-body h5 {
+  display: flex;
+  align-items: top;
+  justify-content: right;
+  margin-bottom: 16px;
+}
+.about-body .about-line {
+  width: 2.75vw;
+  height: 1px;
+  margin-top: 8px;
+  background-color: #000;
+  margin-right: 1vw;
+}
+.about-body p {
+  font-weight: 400;
+  line-height: 22px;
+}
+.about_skill .about-body p {
+  line-height: 28px;
+}
+/* contact-------------- */
+/* --------------------- */
+.contact {
+  width: 100vw;
+  position: relative;
+  margin-bottom: 80px;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.contact h1 {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 120px;
+  left: -64px;
+  font-size: 51.2px;
+  font-family: Montserrat;
+}
+.contact h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 32px;
+  right: 28px;
+  font-size: 30.7px;
+  font-family: Montserrat;
+}
+/* -------- */
+.contact-box {
+  padding: 5vh 0;
+  width: 23.75vw;
+  margin: 0 auto;
+}
+.contact-box h3 {
+  font-size: 2.4vw;
+  margin-bottom: 2vh;
+}
+.contact-mail {
+  margin-bottom: 10vh;
+}
+.contact-box a {
+  font-size: 1.8vw;
+  line-height: 3vw;
+  color: #252525;
+}
+/* footer-------------- */
+/* --------------------- */
+footer {
+  padding: 10vh 6.25vw 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  padding-bottom: 2vh;
+}
+.footer_nav li {
+  font-size: 1.6vw;
+}
+.footer_message {
+  text-align: right;
+}
+.footer_message img {
+  width: 10vw;
+}
+.footer_message .thank {
+  margin-bottom: 2vh;
+}
