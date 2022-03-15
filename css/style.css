@@ -179,6 +179,9 @@ body {
   object-fit: cover;
   margin-bottom: 16px;
 }
+.work_shh-logo {
+  object-position: left center;
+}
 .work-list .work-body {
   /* height: 5vw; */
   width: 100%;
