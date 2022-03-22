@@ -1,0 +1,29 @@
+/* footer-------------- */
+/* --------------------- */
+footer {
+  padding: 10vh 6.25vw 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  padding-bottom: 2vh;
+}
+.footer_nav li {
+  font-size: 1.6vw;
+}
+.footer_message {
+  text-align: right;
+}
+.footer_message img {
+  width: 10vw;
+}
+.footer_message .thank {
+  margin-bottom: 2vh;
+}
