@@ -28,6 +28,18 @@
 .summary-img .slide-show img {
   object-fit: contain;
 }
+.point_01 {
+  z-index: 100;
+}
 .link-shh {
   font-size: 12px;
+  color: #252525;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.link-shh:hover {
+  color: #fff;
+  text-shadow: 0.3px 0 0 #252525, 0 0.3px 0 #252525, -0.3px 0 0 #252525,
+    0 -0.3px 0 #252525;
 }
