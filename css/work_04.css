@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.work-number a.work-number_04 {
+  position: relative;
+}
+.work-number a.work-number_04::after {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  left: 5vw;
+  background-color: #252525;
+  width: 4vw;
+  height: 4vw;
+}
+.work-info h1 {
+  font-family: Noto Sans JP;
+}
+.retoro-img {
+  width: 25vw;
+  position: absolute;
+  top: 24px;
+  left: 5vw;
+  z-index: -10;
+}
+.summary-img .slide-show img {
+  object-fit: contain;
+}

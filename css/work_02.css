@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.work-number a.work-number_02 {
+  position: relative;
+}
+.work-number a.work-number_02::after {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  left: 5vw;
+  background-color: #252525;
+  width: 4vw;
+  height: 4vw;
+}
+.work-info h1 {
+  font-family: Noto Sans JP;
+}
+.summary_report {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  line-height: 16px;
+}
+.summary_report:hover {
+  font-weight: 700;
+}
+.neon-img {
+  width: 24vw;
+  position: absolute;
+  top: 80px;
+  right: 28vw;
+  z-index: -10;
+}

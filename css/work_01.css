@@ -1,7 +1,37 @@
-.body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.summary-img .slide-show img {
+  border: #252525 1px solid;
+}
+.work-number a.work-number_01 {
   position: relative;
 }
-/* absolute,fixed------------- */
-.go-home {
-  transform: rotate(-90deg);
+.work-number a.work-number_01::after {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  left: 5vw;
+  background-color: #252525;
+  width: 4vw;
+  height: 4vw;
+}
+.peg-img {
+  position: absolute;
+  width: 160px;
+  transform: rotate(-45deg);
+  top: 105px;
+  right: 31.25vw;
+  z-index: -10;
+}
+.cook-img {
+  position: absolute;
+  top: 0;
+  width: 160px;
+  transform: rotate(35deg);
+  top: 0px;
+  left: 31.25vw;
+  z-index: -10;
 }

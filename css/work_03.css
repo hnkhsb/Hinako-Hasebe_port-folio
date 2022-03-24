@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.work-number a.work-number_03 {
+  position: relative;
+}
+.work-number a.work-number_03::after {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  left: 5vw;
+  background-color: #252525;
+  width: 4vw;
+  height: 4vw;
+}
+/* .work-info h1 {
+  font-family: Noto Sans JP;
+} */
+.summary_report:hover {
+  font-weight: 700;
+}
+.point_01 .point-body,
+.point_03 .point-body {
+  margin-right: 25vw;
+}
+.magazine-img {
+  width: 24vw;
+  position: absolute;
+  transform: rotate(30deg);
+  top: 120px;
+  left: 32vw;
+  z-index: -10;
+}
