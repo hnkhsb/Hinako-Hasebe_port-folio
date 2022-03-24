@@ -10,9 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css/work_06.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -20,17 +29,17 @@
     <p class="hinakohasebe-work">HINAKO HASEBE - WORKS</p>
     <div class="work-number_flex">
       <div class="work-number">
-        <a href="work_01.html">01.</a>
+        <a href="work_01.html" class="work-number_01">01.</a>
         <div class="line"></div>
-        <a href="work_02.html">02.</a>
+        <a href="work_02.html" class="work-number_02">02.</a>
         <div class="line"></div>
-        <a href="work_03.html">03.</a>
+        <a href="work_03.html" class="work-number_03">03.</a>
         <div class="line"></div>
-        <a href="work_04.html">04.</a>
+        <a href="work_04.html" class="work-number_04">04.</a>
         <div class="line"></div>
-        <a href="work_05.html">05.</a>
+        <a href="work_05.html" class="work-number_05">05.</a>
         <div class="line"></div>
-        <a href="work_06.html">06.</a>
+        <a href="work_06.html" class="work-number_06">06.</a>
       </div>
     </div>
     <img
@@ -40,23 +49,13 @@
     />
     <section class="top">
       <div class="work-info">
-        <p class="number">01.</p>
-        <h1>Camgaroo　HP</h1>
-        <p class="period">2021.11-2022.03</p>
+        <p class="number">05.</p>
+        <h1>少年発電<br />ホールディングス<br />バンドロゴ</h1>
+        <p class="period">2021.05-2021.08</p>
         <ul>
           <li>
-            <h3>URL</h3>
-            <a href="https://hnkhsb.github.io/assets_final-subject/"
-              ><p class="info-content work-info_url">
-                https://hnkhsb.github.io/assets_final-subject/
-              </p></a
-            >
-          </li>
-          <li>
             <h3>SKILLS</h3>
-            <p class="info-content">
-              Illustrator / Photoshop / XD<br />HTML5 / CSS3/ JQuery
-            </p>
+            <p class="info-content">Illustrator / Photoshop</p>
           </li>
           <li>
             <h3>SCOPE</h3>
@@ -64,24 +63,22 @@
           </li>
           <li>
             <h3>CONTENTS</h3>
-            <p class="info-content">Top page, Items page</p>
+            <p class="info-content">Japanese logo, English logo</p>
           </li>
         </ul>
       </div>
       <figure class="top-img">
-        <img src="/work-img/pc-moniter_camgaroo.png" alt="image" />
+        <img src="/img/work_shh-logo.png" alt="image" />
       </figure>
     </section>
     <section class="summary">
       <div class="summary-img">
-        <div class="slide-show">
-          <div class="img-01"></div>
-          <div class="img-02"></div>
-          <div class="img-03"></div>
-          <div class="img-04"></div>
-          <div class="img-05"></div>
+        <div class="slide-show" id="slideShow">
+          <img src="/work-img/logo_br_blk.png" alt="image" />
+          <img src="/work-img/logo_en_red.png" alt="image" />
+          <img src="/work-img/work_SHH.png" alt="image" />
         </div>
-        <div class="summary-img_title">企画書【簡易版】</div>
+        <div class="summary-img_title">展開例</div>
       </div>
       <div class="summary-text">
         <div class="summary-box01">
@@ -90,18 +87,20 @@
             <h4>制作背景</h4>
           </div>
           <p class="summary-body">
-            <span class="big-letter">学</span
-            >校の卒業制作で作成しました。自分で０からwebサイトを作る機会もあまり無いと思ったので、サービスの提案からロゴの作成、コーディングまで一通り作成しました。
+            <span class="big-letter">友</span
+            >人のバンド、少年時代発電ホールディングスのロゴを作成させていただきました。彼らのライブが好きで、よく足を運んでいたのですが、バンドのロゴが無いのが勿体無いと思い、作らせてくれないか、と提案したところ、快諾をいただきました。友人ということと、自分もバンドの経験があったこともあり、ロゴに対する彼の希望やイメージをとても深く聞き出すことが出来ました
           </p>
         </div>
         <div class="summary-box02">
           <div class="summary_title">
             <div class="summary-title-line"></div>
-            <h4>企画について</h4>
+            <h4>英語ver.</h4>
           </div>
           <p class="summary-body">
-            <span class="big-letter">荷</span
-            >物が多くなってしまうキャンプの移動手段として、最適と言える車ですが、都内に住む、特に若い世代は、免許は持ってるけど、車は持っていないという人が多い。私も該当者の1人で、今回のサービスを提案するに至りました。
+            <span class="big-letter">バ</span
+            >ンド内や周辺での日本語のロゴの反響があり、ありがたいことに英語版ロゴの制作依頼も頂き、お受けいたしました。
+            日本語ver.のフラットなロゴとは異なり、立体感、躍動感のあるロゴに仕上げました。
+            それらの印象を表現するため、今回の課題では、明治、昭和時代の広告やマッチのパッケージなどを参考に作成しました。
           </p>
         </div>
       </div>
@@ -114,49 +113,35 @@
       <div class="point-area">
         <ul class="point-list">
           <li class="point_01">
-            <h3>車ごとレンタルページ、</h3>
+            <h3>少年発電</h3>
             <br />
-            <h3>商品ページへ誘導したい。</h3>
+            <h3>ホールディングスとは</h3>
             <p class="point-body">
-              サイトの目的である、サービスの認知、予約への誘導のため、ファーストビューに専用ページへのボタンを配置。また、一番最初のコンテンツに車ごとレンタルの簡単な説明を用意し、おすすめやランキングなど、商品紹介のコンテンツを複数配置しました。
+              彼らの曲やライブを良く知っている私だからこそので、彼らの第一印象の看板となるロゴに、バンドの雰囲気を上手く表現出来ると思いました。ファンク、ブルース、ロック、歌謡曲など、彼らの曲を1つのジャンルで呼ぶのは難しいですが、男くさい、昭和の雰囲気を表現したいと思いました。また、バンド名の"発電"をモチーフにした何かキャッチーなイラストが含まれると良い、という事でした<br /><span
+                class="link-shh"
+                >https://youtube.com/channel/UCY6s_fA606KN9vI2yw7D3tw</span
+              >
             </p>
+            <img
+              class="record-img"
+              src="/work-img/shh-logo_sozai-a.png"
+              alt="image"
+            />
           </li>
           <li class="point_02">
-            <h3>スクロールや</h3>
+            <h3>レコード、スナック、</h3>
             <br />
-            <h3>ホバー時の挙動で</h3>
-            <br />
-            <h3>導線を分かりやすく。</h3>
+            <h3>ウルトラマン</h3>
             <p class="point-body">
-              新しいサービスなので、信頼出来るサイトだと思わせたい。そのため説明やコンテンツを増やそうと意識すると、どうしても長いページになってしまう。だからこそ、どこをクリックすると移動できるのか分かりやすくし、スクロールしたくなる、読み進めたくなるような時間差の動きを加えました。
+              ヒアリングから、60〜70年代の洋楽、邦楽のレコード、スナックの看板、ウルトラマンのフォントなどを参考に作成しました。彼らの男らしい、シンプルで堂々とした印象を表現する為に、重心を高くし、文字を太くし、文字の外枠は全て直線で作成しました。また、バンド名のインパクトが大きいので、見る人がバンド名を覚えるのを邪魔しない様な装飾にしたいと考えました。そのため、文字は出来るだけ変えずに、装飾として両端の文字の一画を稲妻にし、"電"の文字をコンセントの様な形にしました。
             </p>
-            <img
-              class="peg-img"
-              src="/work-img/camgaroo_sozai-a.png"
-              alt="image"
-            />
           </li>
           <li class="point_03">
-            <h3>名前とロゴだけでも</h3>
+            <h3>回転する</h3>
             <br />
-            <h3>覚えて帰って欲しい。</h3>
+            <h3>レコードから着想</h3>
             <p class="point-body">
-              サービスを簡単に知ってもらうため、最初にコンセプトとロゴを見せました。また、サービスと車ごとレンタルを印象付けるため、車とテントを組み合わせた、Camgarooらしいキャッチーなアイコンをたくさん使い、車がボタンを運んで来るような、遊び心のあるアニメーションを作りました。
-            </p>
-            <img
-              class="cook-img"
-              src="/work-img/camgaroo_sozai-b.png"
-              alt="image"
-            />
-          </li>
-          <li class="point_04">
-            <h3>親しみやすい</h3>
-            <br />
-            <h3>アットホームな印象を。</h3>
-            <br />
-            <h3>キャンプ欲をそそりたい。</h3>
-            <p class="point-body">
-              初めてのユーザーにもこのような印象を与えるため、トーンの落ち着いた、カントリー風な色を使いました。また、角丸のオブジェクトや、丸ゴシックを使って、柔らかい雰囲気を演出しました。また、キャンプの非日常的なワクワク感を感じてもらうため、写真を大きく、多く使いました。
+              英語ver.のロゴは、エナジードリンクのパッケージの様な躍動感のあるものがいい、ということだったので、文字を斜めにし、影を加えました。また、何か動きを加えたいと思い、回り続けるレコードの動きが少年発電ホールディングスにぴったりだということで、回転する様な装飾を加えました。また、バンド名が長いので、クライアントと相談して頭文字の"SHH"を大きく見せる様にしました。また、フォントは、アメリカンレトロな看板や、日本語ver.同様、60、70年代のレコードを参考にしました。
             </p>
           </li>
         </ul>
@@ -185,6 +170,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="js/slick.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>

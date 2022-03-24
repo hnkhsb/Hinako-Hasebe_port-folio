@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
-.work-number a.work-number_03 {
+.work-number a.work-number_06 {
   position: relative;
 }
-.work-number a.work-number_03::after {
+.work-number a.work-number_06::after {
   content: "";
   position: absolute;
   top: -1vw;
@@ -15,18 +15,19 @@
   width: 4vw;
   height: 4vw;
 }
-/* .work-info h1 {
+.work-info h1 {
   font-family: Noto Sans JP;
-} */
-.point_01 .point-body,
-.point_03 .point-body {
-  margin-right: 25vw;
 }
-.magazine-img {
-  width: 24vw;
+.record-img {
+  width: 25vw;
   position: absolute;
-  transform: rotate(30deg);
-  top: 120px;
-  left: 32vw;
+  top: 32px;
+  left: 24vw;
   z-index: -10;
+}
+.summary-img .slide-show img {
+  object-fit: contain;
+}
+.link-shh {
+  font-size: 12px;
 }

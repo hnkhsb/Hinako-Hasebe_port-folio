@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.work-number a.work-number_05 {
+  position: relative;
+}
+.work-number a.work-number_05::after {
+  content: "";
+  position: absolute;
+  top: -1vw;
+  left: 5vw;
+  background-color: #252525;
+  width: 4vw;
+  height: 4vw;
+}
+/* .work-info h1 {
+  font-family: Noto Sans JP;
+} */
+.ticket-img {
+  width: 22vw;
+  position: absolute;
+  transform: rotate(5deg);
+  top: 80px;
+  right: 12vw;
+  z-index: -10;
+}
+.summary-img_title {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.summary-img .slide-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summary-img .slide-show img {
+  width: 70%;
+  height: 20vw;
+  object-fit: contain;
+}
