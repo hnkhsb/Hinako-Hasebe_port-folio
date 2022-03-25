@@ -179,6 +179,9 @@ body {
   object-fit: cover;
   margin-bottom: 16px;
 }
+.work-img.work-contain {
+  object-fit: contain;
+}
 .work_shh-logo {
   object-position: left center;
 }

@@ -18,11 +18,18 @@
 .work-info h1 {
   font-family: Noto Sans JP;
 }
-.record-img {
-  width: 25vw;
+.pikurusu-img {
+  width: 18vw;
   position: absolute;
-  top: 32px;
-  left: 24vw;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}
+.record-img {
+  width: 16vw;
+  position: absolute;
+  top: 24px;
+  right: 28vw;
   z-index: -10;
 }
 .summary-img .slide-show img {
@@ -32,7 +39,7 @@
   z-index: 100;
 }
 .link-shh {
-  font-size: 12px;
+  font-size: 1vw;
   color: #252525;
   transition-property: all;
   transition-timing-function: ease-in-out;
