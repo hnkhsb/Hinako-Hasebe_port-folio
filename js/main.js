@@ -49,16 +49,41 @@ $(function () {
   );
   // pageTop------------------------------
 
-  $("#pageTop > a").on("click", function () {
-    console.log("click");
-
+  $("#toTheTop").on("click", function () {
+    // console.log("click");
+    var topPosY = $("#top").offset().top;
     // event.preventDefault();
     $("body,html").animate(
       {
-        scrollTop: 0,
+        scrollTop: topPosY,
       },
-      800
+      500
     );
+
+    // aタグの解除
+    return false;
+  });
+
+  $("#topNav a").on("click", function () {
+    // console.log("click");
+
+    var navId = $(this).attr("href");
+    // console.log(navId);
+    var pos = $(navId).offset().top;
+
+    $("body,html").animate({ scrollTop: pos - 80 }, 500);
+
+    // aタグの解除
+    return false;
+  });
+  $("#footerNav a").on("click", function () {
+    // console.log("click");
+
+    var navId = $(this).attr("href");
+    console.log(navId);
+    var pos = $(navId).offset().top;
+
+    $("body,html").animate({ scrollTop: pos - 80 }, 500);
 
     // aタグの解除
     return false;
@@ -66,44 +91,52 @@ $(function () {
 
   $(window).on("scroll", function () {
     const dy = $(this).scrollTop() + $(window).height();
-    const newsPosY = $(".news > h1").offset().top + 40;
-    const featurePosY = $(".feature > h1").offset().top + 40;
-    const setPosY = $(".set > h1").offset().top + 40;
-    const rankingPosY = $(".ranking > h1").offset().top + 40;
-    const gearPosY = $(".gear > h1").offset().top + 40;
-    const howtoPosY = $(".how-to > h1").offset().top + 40;
+    const worksPosY = $("#works").offset().top;
+    const worksH1PosY = $("#worksH1").offset().top;
+    const aboutPosY = $("#about").offset().top;
+    const aboutH1PosY = $("#aboutH1").offset().top;
+    const contactPosY = $("#contact").offset().top;
+    const contactH1PosY = $("#contactH1").offset().top;
+    const footerPosY = $("#footer").offset().top;
 
-    // console.log(carPosY);
-    // console.log(newsPosY);
-    // console.log(featurePosY);
-    // console.log(setPosY);
-    // console.log(rankingPosY);
-    // console.log(gearPosY);
-    // console.log(howtoPosY);
+    // console.log(worksH1);
 
-    if (dy > newsPosY) {
-      $(".news>.car-icon_btn_common").addClass("slide_btn");
-      $(".news>ol").addClass("fade-in-left");
+    // toTheTop-----
+    if (dy > aboutPosY - 160) {
+      $("#toTheTop").addClass("active");
     }
-    if (dy > featurePosY) {
-      $("#pageTop").addClass("fade-in");
-      $(".feature>ul").addClass("fade-in-left");
-      $(".feature>.car-icon_btn_common").addClass("slide_btn");
-    } else {
-      $("#pageTop").removeClass("fade-in");
+    if (dy < aboutPosY - 160) {
+      $("#toTheTop").removeClass("active");
     }
-    if (dy > setPosY) {
-      $(".set>.car-icon_btn_common").addClass("slide_btn");
-      $(".set>ul").addClass("fade-in-left");
+    if (dy > footerPosY) {
+      $("#toTheTop").removeClass("active");
     }
-    if (dy > rankingPosY) {
-      $(".ranking>.car-icon_btn_common").addClass("slide_btn");
+    // sectionName------
+    if (worksH1PosY > worksPosY) {
+      $("#worksH1").addClass("active");
     }
-    if (dy > gearPosY) {
-      $(".gear>.car-icon_btn_common").addClass("slide_btn");
+    if (worksH1PosY < worksPosY) {
+      $("#worksH1").removeClass("active");
     }
-    if (dy > howtoPosY) {
-      $(".how-to>.car-icon_btn_common").addClass("slide_btn");
+    if (worksH1PosY > aboutPosY - 160) {
+      $("#worksH1").removeClass("active");
+    }
+
+    if (aboutH1PosY > aboutPosY - 80) {
+      $("#aboutH1").addClass("active");
+    }
+    if (aboutH1PosY < aboutPosY) {
+      $("#aboutH1").removeClass("active");
+    }
+    if (aboutH1PosY > contactPosY - 160) {
+      $("#aboutH1").removeClass("active");
+    }
+
+    if (contactH1PosY > contactPosY - 80) {
+      $("#contactH1").addClass("active");
+    }
+    if (contactH1PosY < contactPosY) {
+      $("#contactH1").removeClass("active");
     }
   });
 });

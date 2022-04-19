@@ -16,7 +16,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <section class="top">
+    <section class="top" id="top">
       <img class="bar-code" src="img/bar-code_logo_BLK_tate.png" alt="logo" />
       <img class="top-paragraph" src="img/top-paragraph.png" alt="paragraph" />
       <div class="top_box">
@@ -29,21 +29,21 @@
           <p class="this">THIS IS A</p>
           <p class="portfolio">PORTFOLIO</p>
         </h1>
-        <ul class="top_nav">
+        <ul class="top_nav" id="topNav">
           <li>
-            <a href="index.html#work">
+            <a href="#works">
               <p class="section-name">WORKS</p>
               <!-- <p class="page">p.001</p> -->
             </a>
           </li>
           <li>
-            <a href="index.html#about">
-              <p class="section-name">ABOUT ME</p>
+            <a href="#about">
+              <p class="section-name">ABOUT</p>
               <!-- <p class="page">p.002</p> -->
             </a>
           </li>
           <li>
-            <a href="index.html#contact">
+            <a href="#contact">
               <p class="section-name">CONTACT</p>
               <!-- <p class="page">p.003</p> -->
             </a>
@@ -57,8 +57,8 @@
         <div class="top_img-box"></div>
       </div>
     </section>
-    <section class="work" id="work">
-      <h1>WORKS</h1>
+    <section class="work" id="works">
+      <h1 id="worksH1">WORKS</h1>
       <ol class="work-list">
         <li>
           <p class="num">01.</p>
@@ -154,7 +154,7 @@
       <!-- <h2>p.001</h2> -->
     </section>
     <section class="about" id="about">
-      <h1>ABOUT ME</h1>
+      <h1 id="aboutH1">ABOUT</h1>
       <ul class="about-list">
         <li class="about_profile">
           <img src="img/about-me_profile.png" alt="photo" />
@@ -235,7 +235,7 @@
       <!-- <h2>p.002</h2> -->
     </section>
     <section class="contact" id="contact">
-      <h1>CONTACT</h1>
+      <h1 id="contactH1">CONTACT</h1>
       <div class="contact-box">
         <div class="contact-mail">
           <h3>MAIL</h3>
@@ -256,11 +256,12 @@
       </div>
       <!-- <h2>p.003</h2> -->
     </section>
-    <footer>
-      <ul class="footer_nav">
-        <li><a href="index.html#work">WORKS</a></li>
-        <li><a href="index.html#about">ABOUT ME</a></li>
-        <li><a href="index.html#contact">CONTACT</a></li>
+    <footer id="footer">
+      <ul class="footer_nav" id="footerNav">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
       <div class="footer_message">
         <p>This is a PORTFOLIO<br />of HINAKO HASEBE.</p>
@@ -268,6 +269,10 @@
         <img src="img/bar-code_logo_BLK.png" alt="" />
       </div>
     </footer>
+    <a href="#top" id="toTheTop">
+      <div class="to-the-top_line"></div>
+      <span>TOP</span>
+    </a>
     <!-- js========================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script

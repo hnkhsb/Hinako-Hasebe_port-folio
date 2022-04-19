@@ -72,7 +72,7 @@ body {
 .top_box h2 .hinako {
   margin-right: 1vw;
 }
-@media (max-width: 1160px) {
+@media (max-width: 820px) {
   .top {
     padding: 3.598vh 10.666vw 7.196vh;
     margin-bottom: 48px;
@@ -119,23 +119,27 @@ body {
 .top_nav {
   position: absolute;
   right: 0;
-  bottom: 17vh;
+  bottom: 14vh;
   text-align: right;
   list-style: none;
 }
 
 .top_nav li {
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
 .top_nav a {
   color: #fff;
-  text-shadow: 1px 0 0 #252525, 0 1px 0 #252525, -1px 0 0 #252525,
-    0 -1px 0 #252525;
   font-weight: 700;
-  letter-spacing: 1px;
+  display: inline-block;
+  background-color: #252525;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 4px;
 }
 .top_nav a:hover {
   color: #252525;
+  background-color: #fff;
+  font-weight: 800;
   text-shadow: none;
 }
 .top_nav li .page {
@@ -146,7 +150,7 @@ body {
   font-size: 2.8vw;
   margin-bottom: 0.5vh;
 }
-@media (max-width: 1160px) {
+@media (max-width: 820px) {
   .top_nav {
     bottom: 17vh;
   }
@@ -180,7 +184,7 @@ body {
   height: 100%;
   margin: 0 auto;
   text-align: center;
-  background: url(../img/top-img.png) center right no-repeat;
+  background: url(../img/top_img_pc.png) center right no-repeat;
   background-size: cover;
   position: relative;
   z-index: -10;
@@ -220,19 +224,21 @@ body {
   font-family: Montserrat;
   font-weight: 700;
 }
-.work h1 {
+#worksH1 {
   transform: rotate(-90deg);
-  position: absolute;
-  top: 80px;
-  left: -40px;
-  font-size: 51.2px;
+  position: fixed;
+  top: 48.75vh;
+  right: 91vw;
+  font-size: 1.8vw; /* 24px */
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  transition-duration: 0.2s;
+  /* ---- */
+  opacity: 0;
 }
-.work h2 {
-  transform: rotate(90deg);
-  position: absolute;
-  bottom: 60px;
-  right: 32px;
-  font-size: 30.7px;
+#worksH1.active {
+  opacity: 1;
 }
 /* ----- */
 .work-list {
@@ -249,6 +255,12 @@ body {
   width: 23.75vw;
   text-align: center;
   margin-bottom: 24px;
+}
+.work-list li a img {
+  transition: all ease-in-out 0.1s;
+}
+.work-list li a:hover img {
+  transform: rotate(15deg);
 }
 .work-list .num {
   text-align: left;
@@ -298,21 +310,22 @@ body {
   font-family: Noto Sans JP;
   font-weight: 700;
 }
-.about h1 {
+#aboutH1 {
+  font-family: Montserrat;
   transform: rotate(-90deg);
-  position: absolute;
-  top: 120px;
-  left: -80px;
-  font-size: 51.2px;
-  font-family: Montserrat;
+  position: fixed;
+  top: 48.75vh;
+  right: 91.1vw;
+  font-size: 1.8vw; /* 24px */
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  transition-duration: 0.2s;
+  /* ---- */
+  opacity: 0;
 }
-.about h2 {
-  transform: rotate(90deg);
-  position: absolute;
-  bottom: 32px;
-  right: 28px;
-  font-size: 30.7px;
-  font-family: Montserrat;
+#aboutH1.active {
+  opacity: 1;
 }
 /* ----------- */
 .about-list {
@@ -390,21 +403,21 @@ body {
   font-family: Montserrat;
   font-weight: 700;
 }
-.contact h1 {
+#contactH1 {
   transform: rotate(-90deg);
-  position: absolute;
-  top: 120px;
-  left: -64px;
-  font-size: 51.2px;
-  font-family: Montserrat;
+  position: fixed;
+  top: 48.75vh;
+  right: 90vw;
+  font-size: 1.8vw; /* 24px */
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  transition-duration: 0.2s;
+  /* ---- */
+  opacity: 0;
 }
-.contact h2 {
-  transform: rotate(90deg);
-  position: absolute;
-  bottom: 32px;
-  right: 28px;
-  font-size: 30.7px;
-  font-family: Montserrat;
+#contactH1.active {
+  opacity: 1;
 }
 /* -------- */
 .contact-box {
@@ -415,6 +428,7 @@ body {
 .contact-box h3 {
   font-size: 2.4vw;
   margin-bottom: 2vh;
+  font-weight: 800;
 }
 .contact-mail,
 .contact-tel {
@@ -429,4 +443,40 @@ a:hover {
   color: #fff;
   text-shadow: 1px 0 0 #252525, 0 1px 0 #252525, -1px 0 0 #252525,
     0 -1px 0 #252525;
+}
+/* toTheTop---------------- */
+#toTheTop {
+  position: fixed;
+  left: 94vw;
+  bottom: 10vh;
+  width: 1.8vw;
+  text-align: center;
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+}
+#toTheTop.active {
+  opacity: 1;
+}
+#toTheTop .to-the-top_line {
+  width: 2px;
+  height: 15vh;
+  background-color: #252525;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  transition: all ease-in-out 0.2s;
+}
+#toTheTop span {
+  font-family: Montserrat;
+  font-weight: 800;
+  display: block;
+  transform: rotate(90deg);
+  font-size: 1.8vw;
+}
+#toTheTop:hover .to-the-top_line {
+  margin-bottom: 40px;
+  height: 20vh;
+}
+#toTheTop:hover span {
+  color: #252525;
+  text-shadow: none;
 }
