@@ -17,36 +17,36 @@ $(function () {
   //   arrows: false,
   //   // slidesToShow: 1,
   //   // slideToScroll: 1,
+  // // });
+  // $("#slideShow").slick({
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   dots: true,
+  //   dotsClass: "slick-dots2",
+  //   infinite: true,
+  //   speed: 500,
+  //   fade: true,
+  //   cssEase: "linear",
+  //   pauseOnFocus: false,
   // });
-  $("#slideShow").slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    dots: true,
-    dotsClass: "slick-dots2",
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: "linear",
-    pauseOnFocus: false,
-  });
 
   //   ハンバーガーメニューーーーーーーーーーーーーーーーーー
-  $("#menuBtn").on("click", function () {
-    console.log("click!");
-    $("#menuSlide").toggleClass("active");
-    $("#menuBtnTop").toggleClass("active");
-    $("#menuBtnUnder").toggleClass("active");
-    $(".menu_filter").toggleClass("fade-in");
-  });
-  //  top-page_top-btn------
-  $(".top_btn_car").hover(
-    function () {
-      $(".top_btn_car>img").attr("src", "icon/icon_903030.png");
-    },
-    function () {
-      $(".top_btn_car>img").attr("src", "icon/icon_fff4e3.png");
-    }
-  );
+  // $("#menuBtn").on("click", function () {
+  //   console.log("click!");
+  //   $("#menuSlide").toggleClass("active");
+  //   $("#menuBtnTop").toggleClass("active");
+  //   $("#menuBtnUnder").toggleClass("active");
+  //   $(".menu_filter").toggleClass("fade-in");
+  // });
+  // //  top-page_top-btn------
+  // $(".top_btn_car").hover(
+  //   function () {
+  //     $(".top_btn_car>img").attr("src", "icon/icon_903030.png");
+  //   },
+  //   function () {
+  //     $(".top_btn_car>img").attr("src", "icon/icon_fff4e3.png");
+  //   }
+  // );
   // pageTop------------------------------
 
   $("#toTheTop").on("click", function () {
