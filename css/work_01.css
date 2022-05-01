@@ -13,25 +13,8 @@
   content: "";
   position: absolute;
   top: -1vw;
-  left: 5vw;
+  left: 4vw;
   background-color: #252525;
   width: 4vw;
   height: 4vw;
-}
-.peg-img {
-  position: absolute;
-  width: 160px;
-  transform: rotate(-45deg);
-  top: 105px;
-  right: 31.25vw;
-  z-index: -10;
-}
-.cook-img {
-  position: absolute;
-  top: 0;
-  width: 160px;
-  transform: rotate(35deg);
-  top: 0px;
-  left: 31.25vw;
-  z-index: -10;
 }

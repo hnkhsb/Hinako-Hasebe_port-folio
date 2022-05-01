@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   top: -1vw;
-  left: 5vw;
+  left: 4vw;
   background-color: #252525;
   width: 4vw;
   height: 4vw;
@@ -18,35 +18,51 @@
 .work-info h1 {
   font-family: Noto Sans JP;
 }
-.pikurusu-img {
-  width: 18vw;
+/* --- */
+.consept {
+  margin-bottom: 160px;
+}
+.consept_list li {
+  position: relative;
+}
+img.shh_poster {
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  box-shadow: rgb(0, 0, 0, 0.2) 5px 5px 5px;
+}
+.shh_seal img {
+  position: absolute;
+  top: 0;
   right: 0;
-  z-index: -10;
+  width: 18vw;
+  padding: 0;
+  transform: rotate(15deg);
 }
-.record-img {
-  width: 16vw;
-  position: absolute;
-  top: 24px;
-  right: 28vw;
-  z-index: -10;
+/* --- */
+.design_shh {
+  width: 81.25vw;
+  margin: 0 auto;
+  font-family: Noto Sans JP;
+  margin-bottom: 80px;
 }
-.summary-img .slide-show img {
-  object-fit: contain;
+.design_shh ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.point_01 {
-  z-index: 100;
+.design_shh ul li {
+  width: 25vw;
 }
-.link-shh {
-  font-size: 1vw;
-  color: #252525;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
+.design_shh ul li img {
+  width: 100%;
 }
-.link-shh:hover {
-  color: #fff;
-  text-shadow: 0.3px 0 0 #252525, 0 0.3px 0 #252525, -0.3px 0 0 #252525,
-    0 -0.3px 0 #252525;
+.design_shh .design_body {
+  padding-top: 16px;
+}
+.side-hell {
+  margin-bottom: 160px;
+  text-align: right;
 }

@@ -31,7 +31,7 @@ body {
 .work-number_flex {
   height: 100vh;
   position: fixed;
-  left: 94vw;
+  left: 95vw;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -66,10 +66,11 @@ body {
 
 .top {
   margin: 0 12.5vw 120px;
-  padding-top: 120px;
+  padding-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .work-info {
   text-align: right;
@@ -111,4 +112,117 @@ body {
 }
 .work-info_url {
   font-size: 14px;
+}
+/* ---consept,design--- */
+.consept,
+.design {
+  width: 81.25vw;
+  margin: 0 auto;
+  font-family: Noto Sans JP;
+}
+.consept {
+  margin-bottom: 80px;
+}
+.consept h2 {
+  font-size: 2vw; /* 24px */
+  font-weight: 700;
+  line-height: 2.6vw;
+  margin-bottom: 40px;
+}
+.consept_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  flex-wrap: wrap;
+}
+.consept_list li {
+  width: 25vw;
+  margin-bottom: 40px;
+}
+.consept_list img {
+  width: 100%;
+  padding: 2vw;
+}
+.consept_h3 {
+  font-weight: 600;
+  padding: 8px 24px;
+  border: solid 2px #252525;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.consept_body {
+  line-height: 20px;
+}
+.consept_consept {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+/* --- */
+.design {
+  margin-bottom: 200px;
+  position: relative;
+}
+.design_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.design_body {
+  width: 25vw;
+  padding-top: 30vh;
+}
+.design_body p {
+  line-height: 18px;
+}
+.design_list img {
+  width: 53.125vw;
+}
+.design_h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.design_li-odd .design_body {
+  text-align: right;
+}
+.design_url {
+  width: 25vw;
+  font-family: Montserrat;
+  position: absolute;
+  right: 0;
+}
+.design_url h3 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.design_url a:hover {
+  font-weight: 600;
+}
+/* --- */
+.design_banner-namecard {
+  width: 81.25vw;
+  margin: 0 auto;
+  font-family: Noto Sans JP;
+}
+.design_banner-namecard ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.design_banner-namecard li {
+  width: 25vw;
+}
+.design_banner-namecard li img {
+  width: 100%;
+  margin-bottom: 120px;
+}
+.design_banner-namecard .design_body {
+  margin-bottom: 120px;
+}
+.banner_top-img {
+  padding: 10vw;
 }
