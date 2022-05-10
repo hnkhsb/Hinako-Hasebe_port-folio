@@ -122,9 +122,9 @@ body {
   text-align: right;
   list-style: none;
 }
-
 .top_nav li {
   margin-bottom: 4vh;
+  right: 0;
 }
 .top_nav a {
   color: #fff;
@@ -148,6 +148,20 @@ body {
 .top_nav li .section-name {
   font-size: 2.8vw;
   margin-bottom: 0.5vh;
+}
+.top_insta-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 2.5vw;
+  z-index: 10;
+  transition: all 0.3s;
+}
+.top_insta-icon img {
+  width: 100%;
+}
+.top_insta-icon:hover {
+  bottom: 0.5vw;
 }
 @media (max-width: 820px) {
   .top_nav {

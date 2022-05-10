@@ -15,10 +15,10 @@ body {
   transition-property: right;
   transition-timing-function: ease-in-out;
   transition-delay: 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .go-home:hover {
-  right: 95vw;
+  right: 94.5vw;
 }
 .hinakohasebe-work {
   font-size: 1.8vw;
