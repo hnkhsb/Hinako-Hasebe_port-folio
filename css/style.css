@@ -82,9 +82,9 @@ body {
     top: 3.598vh;
   }
   .top-paragraph {
-    width: 8vw;
-    right: 96.8vw;
-    top: 35vh;
+    width: 6vw;
+    right: 95vw;
+    top: 40vh;
   }
   .top_box {
     padding-top: 17.991vh;
@@ -94,20 +94,20 @@ body {
     top: 10.794vh;
   }
   .top_box h1 .this {
-    font-size: 2.5vw;
-    margin-bottom: 1.5vh;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
   .top_box h1 .portfolio {
-    font-size: 11.5vw; /* 120px */
+    font-size: 48px; /* 120px */
   }
   .top_box h2 .of {
-    font-size: 3vw;
-    margin-bottom: 1vh;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
   .top_box h2 .hinako,
   .top_box h2 .hasebe {
     display: block;
-    font-size: 11.5vw;
+    font-size: 48px;
   }
   .top_box h2 .hinako {
     margin-right: 0vw;
@@ -168,7 +168,15 @@ body {
     bottom: 17vh;
   }
   .top_nav li .section-name {
-    font-size: 6vw;
+    font-size: 24px;
+  }
+  .top_nav li {
+    margin-bottom: 24px;
+    right: 0;
+  }
+  .top_insta-icon {
+    width: 24px;
+    bottom: 2px;
   }
 }
 /* --- */
@@ -253,6 +261,17 @@ body {
 #worksH1.active {
   opacity: 1;
 }
+@media (max-width: 820px) {
+  .work {
+    margin-bottom: 40px;
+  }
+  #worksH1 {
+    top: 48.75vh;
+    /* right: 102vw; */
+    left: -0;
+    font-size: 18px;
+  }
+}
 /* ----- */
 .work-list {
   width: 75vw;
@@ -314,6 +333,45 @@ body {
   font-weight: 300;
   color: #252525;
 }
+@media (max-width: 820px) {
+  .work-list {
+    width: 76.88vw;
+    padding-top: 40px;
+  }
+  .work-list li {
+    width: 36.133vw;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .work-list .num {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .work-img {
+    height: 104px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+  .work_shh-logo {
+    object-position: center center;
+  }
+  .work-body .title {
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .work-body .date {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+  .work-body a {
+    width: 36.133vw;
+    display: block;
+    font-size: 6px;
+  }
+}
 /* about-------------- */
 /* --------------------- */
 .about {
@@ -341,6 +399,18 @@ body {
 #aboutH1.active {
   opacity: 1;
 }
+@media (max-width: 820px) {
+  .about {
+    margin-bottom: 80px;
+    padding-top: 40px;
+  }
+  #aboutH1 {
+    top: 48.75vh;
+    /* right: 88.5vw; */
+    left: -0;
+    font-size: 18px;
+  }
+}
 /* ----------- */
 .about_body {
   width: 75vw;
@@ -358,6 +428,20 @@ body {
 .about_sub-title {
   font-size: 1.4vw;
   font-weight: 300;
+}
+@media (max-width: 820px) {
+  .about_body {
+    width: 76.88vw;
+    padding-top: 80px;
+    font-weight: 400;
+  }
+  .about_h2 {
+    font-size: 32px; /* 40px */
+    letter-spacing: 0;
+  }
+  .about_sub-title {
+    font-size: 14px;
+  }
 }
 /* --profile------ */
 .profile {
@@ -382,10 +466,32 @@ body {
 .profile_body > li {
   width: 22.89vw;
 }
+@media (max-width: 820px) {
+  .profile {
+    margin-bottom: 40px;
+  }
+  .profile h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .profile_body {
+    display: block;
+  }
+  .profile_body > li {
+    width: 100%;
+  }
+}
 /* --- */
 .profile_profile p {
   margin-bottom: 24px;
   line-height: 20px;
+}
+@media (max-width: 820px) {
+  .profile_profile p {
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 20px;
+  }
 }
 /* --- */
 .profile_experience {
@@ -416,6 +522,23 @@ body {
 .profile_experience .experience_body {
   display: inline-block;
 }
+@media (max-width: 820px) {
+  .profile_experience {
+    margin-bottom: 24px;
+  }
+  .profile_experience .experience_line {
+    width: 3px;
+    height: 150px;
+    margin-right: 8px;
+    border-radius: 2px;
+  }
+  .profile_experience .y-m {
+    font-size: 10px;
+  }
+  .profile_experience .experience_body {
+    font-size: 14px;
+  }
+}
 /* --- */
 .profile_hobby p {
   line-height: 20px;
@@ -435,6 +558,24 @@ body {
   object-fit: cover;
   margin-left: 16px;
   margin-bottom: 16px;
+}
+@media (max-width: 820px) {
+  .profile_hobby p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .profile_hobby .hobby {
+    margin-bottom: 24px;
+  }
+  .profile_hobby h4 {
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+  .profile_hobby img {
+    width: 135.5px;
+    height: 135.5px;
+  }
 }
 /* ---skill-personal--- */
 .skill-personal {
@@ -461,6 +602,30 @@ body {
 .skill_web img {
   width: 44.375vw;
 }
+@media (max-width: 820px) {
+  .skill-personal {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .skill {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .skill h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .skill_design {
+    margin-bottom: 32px;
+  }
+  .skill_design img {
+    width: 81.69%;
+  }
+  .skill_web img {
+    width: 100%;
+  }
+}
 /* --- */
 .personal {
   width: 22.89vw; /* 293.33 */
@@ -472,6 +637,20 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
+}
+@media (max-width: 820px) {
+  .personal {
+    width: 100%;
+  }
+  .personal_body li {
+    margin-bottom: 24px;
+  }
+  .personal_body h3 {
+    font-size: 18px;
+  }
+  .personal_body {
+    font-size: 14px;
+  }
 }
 /* ---strength--- */
 .strength {
@@ -503,6 +682,39 @@ body {
   font-weight: 700;
   background-color: #f6f4c2;
 }
+@media (max-width: 820px) {
+  .strength {
+    margin-bottom: 40px;
+  }
+  .strength .about_sub-title {
+    margin-left: 16px;
+  }
+  .strength_body {
+    display: block;
+  }
+  .strength_body li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .strength_body h3 {
+    width: 36.133vw;
+    font-size: 16px;
+    margin-bottom: 0px;
+    line-height: 28px;
+  }
+  .strength_body p {
+    width: 36.133vw;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .strength_body span {
+    font-weight: 700;
+    background-color: #f6f4c2;
+  }
+}
 /* ---outlook--- */
 .outlook {
   width: 100%;
@@ -526,6 +738,36 @@ body {
 .outlook_body span {
   font-size: 20px;
   font-weight: 700;
+}
+@media (max-width: 820px) {
+  .outlook {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .outlook .about_sub-title {
+    font-size: 14px;
+    margin-left: 16px;
+    line-height: 16px;
+  }
+  .about_title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .outlook_body {
+    width: 100%;
+  }
+  .outlook_body li {
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 24px;
+  }
+  .outlook_body span {
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 /* ---goal--- */
 .goal {
@@ -560,6 +802,43 @@ body {
   font-size: 20px;
   margin-bottom: 12px;
 }
+@media (max-width: 820px) {
+  .goal {
+    width: 100%;
+    display: block;
+  }
+  .goal .about_title {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    position: relative;
+  }
+  .goal .about_sub-title {
+    margin-left: 16px;
+    display: block;
+    line-height: 16px;
+  }
+  .goal img {
+    float: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 36.133vw;
+  }
+  .goal_body {
+    width: 100%;
+  }
+  .goal_body li {
+    font-size: 14px;
+    margin-left: 42.533vw;
+    margin-bottom: 16px;
+    line-height: 16px;
+  }
+  .goal_num {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
 /* contact-------------- */
 /* --------------------- */
 .contact {
@@ -584,6 +863,14 @@ body {
 }
 #contactH1.active {
   opacity: 1;
+}
+@media (max-width: 820px) {
+  #contactH1 {
+    top: 48.75vh;
+    /* right: 86.5vw; */
+    left: -2px;
+    font-size: 18px;
+  }
 }
 /* -------- */
 .contact {
@@ -612,6 +899,27 @@ a:hover {
   color: #fff;
   text-shadow: 1px 0 0 #252525, 0 1px 0 #252525, -1px 0 0 #252525,
     0 -1px 0 #252525;
+}
+@media (max-width: 820px) {
+  .contact {
+    padding-top: 40px;
+  }
+  .contact-box {
+    padding: 40px 0;
+    width: 68vw;
+  }
+  .contact-box h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .contact-mail,
+  .contact-tel {
+    margin-bottom: 40px;
+  }
+  .contact-box a {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 /* toTheTop---------------- */
 #toTheTop {
@@ -648,4 +956,22 @@ a:hover {
 #toTheTop:hover span {
   color: #252525;
   text-shadow: none;
+}
+@media (max-width: 820px) {
+  #toTheTop {
+    position: fixed;
+    left: 95vw;
+    bottom: 10vh;
+    width: 1.8vw;
+    text-align: center;
+    opacity: 0;
+    transition: all ease-in-out 0.2s;
+  }
+  #toTheTop .to-the-top_line {
+    width: 1.5px;
+    height: 80px;
+  }
+  #toTheTop span {
+    font-size: 16px;
+  }
 }
